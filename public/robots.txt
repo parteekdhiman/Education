@@ -12,3 +12,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Handle 404 errors
+User-agent: *
+Disallow: /404.html
