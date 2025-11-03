@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, TrendingUp, CheckCircle2, User } from "lucide-react";
 import { courses } from "@/data/courses";
 import { useToast } from "@/hooks/use-toast";
+// import { convertToINR, formatINR } from "@/lib/utils"; 
 
 const CourseDetailPage = () => {
   const { courseId } = useParams();
@@ -31,6 +32,9 @@ const CourseDetailPage = () => {
     });
   };
 
+  // Convert price to Indian Rupees
+  // const priceInINR = convertToINR(course.price);
+
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,9 +60,9 @@ const CourseDetailPage = () => {
               <TrendingUp className="w-5 h-5 text-primary mr-2" />
               <span className="text-foreground font-medium">{course.level}</span>
             </div>
-            <Badge variant="secondary" className="text-xl font-bold py-2 px-4">
-              {course.price}
-            </Badge>
+            {/* <Badge variant="secondary" className="text-xl font-bold py-2 px-4">
+              {formatINR(priceInINR)} 
+            </Badge> */}
           </div>
 
           <Button onClick={handleEnroll} size="lg" className="bg-primary hover:bg-primary-dark shadow-custom-md">

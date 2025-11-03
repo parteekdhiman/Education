@@ -5,7 +5,7 @@ export interface Course {
   duration: string;
   level: string;
   icon: string;
-  price: string;
+  // price: number; // Changed from string to number
   fullDescription: string;
   prerequisites: string[];
   learningOutcomes: string[];
@@ -28,7 +28,7 @@ export const courses: Course[] = [
     duration: "8 weeks",
     level: "Beginner",
     icon: "Code2",
-    price: "$299",
+    // price: 299, // Changed from "$299" to 299
     fullDescription: "A comprehensive introduction to web development covering essential technologies and best practices.",
     prerequisites: ["Basic computer skills", "Internet browsing experience"],
     learningOutcomes: [
@@ -63,7 +63,7 @@ export const courses: Course[] = [
     duration: "10 weeks",
     level: "Intermediate",
     icon: "BarChart3",
-    price: "$399",
+    // price: 399, // Changed from "$399" to 399
     fullDescription: "Learn how to collect, analyze, and visualize data to make informed business decisions.",
     prerequisites: ["Basic mathematics", "Spreadsheet experience"],
     learningOutcomes: [
@@ -98,7 +98,7 @@ export const courses: Course[] = [
     duration: "12 weeks",
     level: "Intermediate",
     icon: "Smartphone",
-    price: "$499",
+    // price: 499, // Changed from "$499" to 499
     fullDescription: "Create mobile applications that work on both iOS and Android devices.",
     prerequisites: ["Programming basics", "Object-oriented concepts"],
     learningOutcomes: [

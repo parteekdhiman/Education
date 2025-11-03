@@ -3,6 +3,7 @@ import { Code, Database, Smartphone, Globe, Brain, Cloud, BarChart3 } from "luci
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { courses } from "@/data/courses";
+import { convertToINR, formatINR } from "@/lib/utils"; // Added import for currency conversion
 
 const Courses = () => {
   const iconMap: Record<string, any> = {
@@ -35,6 +36,8 @@ const Courses = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {courses.map((course, index) => {
               const Icon = iconMap[course.icon] || Code;
+              // Convert price to Indian Rupees
+              const priceInINR = convertToINR(course.price);
               return (
                 <Card
                   key={index}
@@ -56,6 +59,9 @@ const Courses = () => {
                     </span>
                     <span className="bg-secondary px-3 py-1 rounded-full">
                       {course.level}
+                    </span>
+                    <span className="bg-secondary px-3 py-1 rounded-full font-semibold">
+                      {formatINR(priceInINR)} {/* Added price display in INR */}
                     </span>
                   </div>
                   <Link to={`/courses/${course.id}`}>
