@@ -16,7 +16,6 @@ export interface Course {
   instructor: {
     name: string;
     bio: string;
-    expertise: string;
   };
 }
 
@@ -51,9 +50,8 @@ export const courses: Course[] = [
       }
     ],
     instructor: {
-      name: "John Smith",
-      bio: "Senior web developer with 10+ years of experience.",
-      expertise: "Frontend Development, UX Design"
+      name: "Navneet Chandel",
+      bio: "10+ years of experience."
     }
   },
   {
@@ -86,9 +84,8 @@ export const courses: Course[] = [
       }
     ],
     instructor: {
-      name: "Sarah Johnson",
-      bio: "Data scientist with expertise in business analytics.",
-      expertise: "Data Analysis, Statistics, Visualization"
+      name: "Navneet Chandel",
+      bio: "Data scientist with expertise in business analytics."
     }
   },
   {
@@ -121,9 +118,8 @@ export const courses: Course[] = [
       }
     ],
     instructor: {
-      name: "Michael Chen",
+      name: "Navneet Chandel",
       bio: "Mobile development expert with apps published on major platforms.",
-      expertise: "React Native, iOS, Android"
     }
   }
 ];

@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   createBrowserRouter,
   RouterProvider,
+  Outlet,
 } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -19,70 +20,34 @@ import ScrollToTop from "./components/ui/ScrollToTop";
 
 const queryClient = new QueryClient();
 
-// Create router with future flags
+// Create router with a root layout so Navbar is available on every route
+const RootLayout = () => (
+  <ScrollToTop>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main className="pt-16">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  </ScrollToTop>
+);
+
 const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: (
-        <ScrollToTop>
-          <div className="min-h-screen bg-background">
-            <Navbar />
-            <main>
-              <Home />
-            </main>
-            <Footer />
-          </div>
-        </ScrollToTop>
-      ),
+      element: <RootLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "about", element: <AboutPage /> },
+        { path: "courses", element: <CoursesPage /> },
+        { path: "courses/:courseId", element: <CourseDetailPage /> },
+        { path: "contact", element: <ContactPage /> },
+        { path: "*", element: <NotFound /> },
+      ],
     },
-    {
-      path: "/about",
-      element: (
-        <ScrollToTop>
-          <AboutPage />
-        </ScrollToTop>
-      ),
-    },
-    {
-      path: "/courses",
-      element: (
-        <ScrollToTop>
-          <CoursesPage />
-        </ScrollToTop>
-      ),
-    },
-    {
-      path: "/courses/:courseId",
-      element: (
-        <ScrollToTop>
-          <CourseDetailPage />
-        </ScrollToTop>
-      ),
-    },
-    {
-      path: "/contact",
-      element: (
-        <ScrollToTop>
-          <ContactPage />
-        </ScrollToTop>
-      ),
-    },
-    {
-      path: "*",
-      element: (
-        <ScrollToTop>
-          <NotFound />
-        </ScrollToTop>
-      ),
-    },
-  ],
-  {
-    future: {
-      v7_startTransition: true,
-      v7_relativeSplatPath: true,
-    },
-  }
+  ]
 );
 
 const App = () => (

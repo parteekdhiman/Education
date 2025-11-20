@@ -45,12 +45,25 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-slide-up">
+            <Card className="p-0 overflow-hidden border-border bg-card hover:shadow-custom-md transition-shadow w-full">
+              <div className="w-full h-64 md:h-96">
+                <iframe
+                  title="Infohills Technologies Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380.6053141845845!2d76.18572374726145!3d32.21012965182172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5ba39d493d9d%3A0xf44ebf863f424262!2sinfohills%20technologies!5e1!3m2!1sen!2sin!4v1763484512660!5m2!1sen!2sin"
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </Card>
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="p-6 border-border bg-card hover:shadow-custom-md transition-shadow"
+                className="p-6 border-border bg-card hover:shadow-custom-md transition-shadow w-full"
               >
                 <div className="flex items-start gap-4">
                   <div className="bg-gradient-primary w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -76,7 +89,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <Card className="p-8 border-border bg-card shadow-custom-md animate-scale-in">
+          <Card className="p-8 border-border bg-card shadow-custom-md animate-scale-in w-full max-w-xl mx-auto">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
