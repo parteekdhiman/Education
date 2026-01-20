@@ -16,26 +16,42 @@ const AboutPage = () => {
         </div>
 
         {/* Mission & Vision */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-1 gap-8 mb-16 max-w-4xl mx-auto">
           <Card className="animate-fade-in">
             <CardContent className="p-8">
               <Target className="w-12 h-12 text-primary mb-4" />
-              <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To provide world-class IT education that bridges the gap between academic learning and industry requirements. 
-                We're committed to transforming passionate learners into skilled professionals ready to excel in the tech industry.
+              <h2 className="text-2xl font-bold mb-4">About InfoHills</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                InfoHills was created to bridge the gap between theory and real-world IT skills.
+                We teach thinking, problem-solving, and confidence.
               </p>
-            </CardContent>
-          </Card>
-
-          <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <CardContent className="p-8">
-              <TrendingUp className="w-12 h-12 text-primary mb-4" />
-              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To be the leading IT education institute recognized for excellence in technical training, 
-                innovation in teaching methodologies, and producing graduates who drive technological advancement globally.
+              <p className="text-foreground font-semibold mb-3">
+                Our goal is simple:
               </p>
+              <p className="text-lg font-bold text-primary mb-4">
+                👉 Make students job-ready, confident, and future-proof.
+              </p>
+              <p className="text-muted-foreground font-semibold mb-2">
+                We focus on:
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Strong fundamentals</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Practical projects</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Industry-relevant tools</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Personal mentoring</span>
+                </li>
+              </ul>
             </CardContent>
           </Card>
         </div>

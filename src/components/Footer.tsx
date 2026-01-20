@@ -15,12 +15,14 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
-              Education Platform
-            </h3>
+            <img
+              src="/infohills-logo.png"
+              alt="InfoHills - Advanced IT Training Institute"
+              className="h-12 w-auto mb-4"
+            />
             <p className="text-background/80 leading-relaxed">
-              Empowering the next generation of tech professionals with
-              world-class education and hands-on training.
+              InfoHills - Advanced IT Training Institute in Shahpur near Dharamshala.
+              Building real careers through quality IT education.
             </p>
           </div>
 
@@ -65,10 +67,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Popular Courses</h4>
             <ul className="space-y-2">
-              <li className="text-background/80">Full Stack Development</li>
+              <li className="text-background/80">Full Stack Web Development</li>
               <li className="text-background/80">Data Science</li>
-              <li className="text-background/80">Mobile Development</li>
-              <li className="text-background/80">UI/UX Design</li>
+              <li className="text-background/80">Machine Learning</li>
+              <li className="text-background/80">Artificial Intelligence</li>
+              <li className="text-background/80">Digital Marketing</li>
             </ul>
           </div>
 
@@ -109,7 +112,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/80">
-            © {currentYear} Education Platform. All rights reserved.
+            © {currentYear} InfoHills - Advanced IT Training Institute. All rights reserved.
           </p>
         </div>
       </div>

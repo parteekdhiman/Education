@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Code2, BarChart3, Smartphone, Palette, Brain, Cloud, Clock, TrendingUp } from "lucide-react";
+import { Code2, BarChart3, Smartphone, Palette, Brain, Cloud, Clock, TrendingUp, Sparkles, Megaphone } from "lucide-react";
 import { courses } from "@/data/courses";
 import { convertToINR, formatINR } from "@/lib/utils"; // Added import for currency conversion
 
@@ -12,7 +12,10 @@ const iconMap: Record<string, any> = {
   Smartphone: Smartphone,
   Palette: Palette,
   Brain: Brain,
-  Cloud: Cloud
+  Cloud: Cloud,
+  TrendingUp: TrendingUp,
+  Sparkles: Sparkles,
+  Megaphone: Megaphone
 };
 
 const CoursesPage = () => {
@@ -39,8 +42,8 @@ const CoursesPage = () => {
               // Convert price to Indian Rupees
               // const priceInINR = convertToINR(course.price);
               return (
-                <Card 
-                  key={course.id} 
+                <Card
+                  key={course.id}
                   className="hover-scale animate-fade-in flex flex-col"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >

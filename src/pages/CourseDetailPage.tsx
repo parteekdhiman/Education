@@ -71,7 +71,13 @@ const CourseDetailPage: React.FC = () => {
                 <TrendingUp className="w-5 h-5 text-primary mr-2" />
                 <span className="text-foreground font-medium">{course.level}</span>
               </div>
+              <div className="flex items-center">
+                <Badge variant="secondary" className="text-lg font-semibold px-4 py-2">
+                  {course.price}
+                </Badge>
+              </div>
             </div>
+            <p className="text-sm text-muted-foreground mb-6">✔ Easy EMI options available</p>
 
             <DialogTrigger asChild>
               <Button size="lg" className="bg-primary hover:bg-primary-dark shadow-custom-md">Enroll Now</Button>
@@ -115,6 +121,63 @@ const CourseDetailPage: React.FC = () => {
                       </div>
                     ))}
                   </div>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: "0.15s" }}>
+                <CardHeader>
+                  <CardTitle className="text-2xl">💼 Job Opportunities</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {course.jobOpportunities.map((job, i) => (
+                      <li key={i} className="flex items-start">
+                        <CheckCircle2 className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-muted-foreground">{job}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <CardHeader>
+                  <CardTitle className="text-2xl">🌍 Real-Life Skills</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {course.realLifeSkills.map((skill, i) => (
+                      <li key={i} className="flex items-start">
+                        <CheckCircle2 className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-muted-foreground">{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: "0.25s" }}>
+                <CardHeader>
+                  <CardTitle className="text-2xl">🚀 Entrepreneurial Benefits</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {course.entrepreneurialBenefits.map((benefit, i) => (
+                      <li key={i} className="flex items-start">
+                        <CheckCircle2 className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-muted-foreground">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                <CardHeader>
+                  <CardTitle className="text-2xl">🔮 Future Scope (Next 5 Years)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">{course.futureScope}</p>
                 </CardContent>
               </Card>
             </div>

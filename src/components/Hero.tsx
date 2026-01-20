@@ -15,25 +15,28 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Transform Your Future with{" "}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
+              Advanced IT Training That Builds{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Professional IT Education
+                Real Careers
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Join our platform and master the skills that matter. Our expert-led courses
-              in programming, web development, and data science will accelerate your career
-              in the tech industry.
+            <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-3 leading-relaxed">
+              AI • ML • Python • Data Science • Web Development • Digital Marketing
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
+              Offline Classes in Shahpur | Online Training for All Himachal
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={scrollToContact}
+                asChild
                 size="lg"
                 className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-custom-lg group"
               >
-                Start Your Journey
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <a href="tel:+918628975909">
+                  Free Demo Classes – Call / WhatsApp 86289-75909
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button
                 onClick={() => {
