@@ -25,7 +25,7 @@ const Hero = () => {
               AI • ML • Python • Data Science • Web Development • Digital Marketing
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              Offline Classes in Shahpur | Online Training for All Himachal
+              Offline Classes in <span className="font-bold text-foreground">Shahpur</span> | Online Training for All Himachal
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -34,7 +34,7 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-custom-lg group"
               >
                 <a href="tel:+918628975909">
-                  Free Demo Classes – Call / WhatsApp 86289-75909
+                  Free Demo Classes – Call 86289-75909
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>

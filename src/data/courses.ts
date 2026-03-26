@@ -98,8 +98,8 @@ export const courses: Course[] = [
     ],
     futureScope: "Web development will continue growing strongly due to e-commerce expansion, startups & SaaS growth, and AI-based web platforms. Full Stack Developers will remain highly employable till 2030 and beyond.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "Expert instructor with 10+ years of experience in web development and teaching."
+      name: "Expert Instructors",
+      bio: "Experienced instructors with proven expertise in web development and industry best practices."
     }
   },
   {
@@ -170,8 +170,8 @@ export const courses: Course[] = [
     ],
     futureScope: "Data will increase exponentially. Every company needs data-driven decisions. Data Science will remain one of the most future-secure careers till 2030+.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "Data scientist with expertise in business analytics and statistical modeling."
+      name: "Expert Instructors",
+      bio: "Specialists in data science with expertise in business analytics and statistical modeling."
     }
   },
   {
@@ -242,8 +242,8 @@ export const courses: Course[] = [
     ],
     futureScope: "ML will be embedded in healthcare, finance, education, and e-commerce. ML skills will be mandatory for future tech professionals.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "ML expert with hands-on experience in building intelligent systems."
+      name: "Expert Instructors",
+      bio: "ML experts with hands-on experience in building intelligent systems."
     }
   },
   {
@@ -314,8 +314,8 @@ export const courses: Course[] = [
     ],
     futureScope: "Data Analytics will grow as companies want better decisions, performance tracking, and cost reduction. Very stable career till 2030.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "Analytics professional with corporate experience in MIS and business intelligence."
+      name: "Expert Instructors",
+      bio: "Analytics professionals with corporate experience in MIS and business intelligence."
     }
   },
   {
@@ -386,8 +386,8 @@ export const courses: Course[] = [
     ],
     futureScope: "AI will dominate education, healthcare, manufacturing, and government systems. AI skills will be essential, not optional by 2030.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "AI specialist focused on practical applications and ethical AI development."
+      name: "Expert Instructors",
+      bio: "AI specialists focused on practical applications and ethical AI development."
     }
   },
   {
@@ -458,8 +458,8 @@ export const courses: Course[] = [
     ],
     futureScope: "Marketing will shift to AI-based personalization, creator economy, and performance-driven branding. Digital marketers will be in constant demand.",
     instructor: {
-      name: "Navneet Chandel",
-      bio: "Digital marketing expert specializing in future-ready strategies and AI integration."
+      name: "Expert Instructors",
+      bio: "Digital marketing experts specializing in future-ready strategies and AI integration."
     }
   }
 ];

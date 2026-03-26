@@ -30,7 +30,32 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const contactInfo = [];
+  const contactInfo = [
+    {
+      icon: Phone,
+      title: "Phone",
+      content: "86289-75909",
+      link: "tel:+918628975909"
+    },
+    {
+      icon: Phone,
+      title: "WhatsApp",
+      content: "90153-13679",
+      link: "https://wa.me/919015313679"
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      content: "info@infohills.tech",
+      link: "mailto:info@infohills.tech"
+    },
+    {
+      icon: MapPin,
+      title: "Location",
+      content: "Shahpur, Dharamshala, Himachal Pradesh",
+      link: "#"
+    }
+  ];
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-secondary/30">

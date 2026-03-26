@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -79,32 +79,31 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61582028321309"
                 className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook className="h-5 w-5 text-primary-foreground" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-primary-foreground" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5 text-primary-foreground" />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/infohills.tech?igsh=NDI0Y3cwY2R0b2tq"
                 className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram className="h-5 w-5 text-primary-foreground" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/infohills-technologies-705890396?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary-dark transition-colors"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="h-5 w-5 text-primary-foreground" />
               </a>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
               <img
                 src="/infohills-logo.png"
                 alt="InfoHills - Advanced IT Training Institute"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </Link>
           </div>
