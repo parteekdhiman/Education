@@ -15,7 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock, TrendingUp, CheckCircle2, User } from "lucide-react";
+import { ArrowLeft, Clock, TrendingUp, CheckCircle2 } from "lucide-react";
 import { courses } from "@/data/courses";
 import { useToast } from "@/hooks/use-toast";
 
@@ -183,7 +183,7 @@ const CourseDetailPage: React.FC = () => {
             </div>
 
             <div className="space-y-8">
-              <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <Card className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 <CardHeader>
                   <CardTitle>Prerequisites</CardTitle>
                 </CardHeader>
@@ -196,23 +196,6 @@ const CourseDetailPage: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                <CardHeader>
-                  <CardTitle>Your Instructor</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center mb-4">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                      <User className="w-8 h-8 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg">{course.instructor.name}</h3>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{course.instructor.bio}</p>
                 </CardContent>
               </Card>
 
