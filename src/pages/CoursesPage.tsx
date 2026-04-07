@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Code2, BarChart3, Smartphone, Palette, Brain, Cloud, Clock, TrendingUp, Sparkles, Megaphone } from "lucide-react";
 import { courses } from "@/data/courses";
-import { convertToINR, formatINR } from "@/lib/utils"; // Added import for currency conversion
 
 const iconMap: Record<string, any> = {
   Code2: Code2,
@@ -44,11 +43,18 @@ const CoursesPage = () => {
               return (
                 <Card
                   key={course.id}
-                  className="hover-scale animate-fade-in flex flex-col"
+                  className="hover-scale animate-fade-in flex flex-col overflow-hidden"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
+                  <div className="relative w-full h-48">
+                    <img
+                      src={course.image}
+                      alt={course.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardHeader>
-                    <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 -mt-12 relative z-10">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <CardTitle className="text-xl">{course.title}</CardTitle>

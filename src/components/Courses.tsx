@@ -3,7 +3,6 @@ import { Code, Database, Smartphone, Globe, Brain, Cloud, BarChart3 } from "luci
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { courses } from "@/data/courses";
-import { convertToINR, formatINR } from "@/lib/utils"; // Added import for currency conversion
 
 const Courses = () => {
   const iconMap: Record<string, any> = {
@@ -36,14 +35,19 @@ const Courses = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {courses.map((course, index) => {
               const Icon = iconMap[course.icon] || Code;
-              // Convert price to Indian Rupees
-              const priceInINR = convertToINR(course.price);
               return (
                 <Card
                   key={index}
-                  className="p-6 hover:shadow-custom-lg transition-all duration-300 hover:-translate-y-2 border-border bg-card group animate-slide-up"
+                  className="p-6 hover:shadow-custom-lg transition-all duration-300 hover:-translate-y-2 border-border bg-card group animate-slide-up overflow-hidden"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
+                  <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden">
+                    <img
+                      src={course.image}
+                      alt={course.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <div className="bg-gradient-primary w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Icon className="h-7 w-7 text-primary-foreground" />
                   </div>
@@ -61,7 +65,7 @@ const Courses = () => {
                       {course.level}
                     </span>
                     <span className="bg-secondary px-3 py-1 rounded-full font-semibold">
-                      {formatINR(priceInINR)} {/* Added price display in INR */}
+                      {course.price}
                     </span>
                   </div>
                   <Link to={`/courses/${course.id}`}>

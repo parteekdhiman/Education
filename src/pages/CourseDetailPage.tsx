@@ -59,6 +59,14 @@ const CourseDetailPage: React.FC = () => {
           </Link>
 
           <div className="mb-12 animate-fade-in">
+            <div className="relative w-full h-64 md:h-80 mb-8 rounded-xl overflow-hidden">
+              <img
+                src={course.image}
+                alt={course.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">{course.title}</h1>
             <p className="text-xl text-muted-foreground mb-6">{course.fullDescription}</p>
 
