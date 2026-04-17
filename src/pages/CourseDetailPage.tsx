@@ -70,14 +70,10 @@ const CourseDetailPage: React.FC = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">{course.title}</h1>
             <p className="text-xl text-muted-foreground mb-6">{course.fullDescription}</p>
 
-            <div className="flex flex-wrap gap-4 mb-6">
+            <div className="flex flex-wrap gap-2 mb-6">
               <div className="flex items-center">
                 <Clock className="w-5 h-5 text-primary mr-2" />
                 <span className="text-foreground font-medium">{course.duration}</span>
-              </div>
-              <div className="flex items-center">
-                <TrendingUp className="w-5 h-5 text-primary mr-2" />
-                <span className="text-foreground font-medium">{course.level}</span>
               </div>
               <div className="flex items-center">
                 <Badge variant="secondary" className="text-lg font-semibold px-4 py-2">

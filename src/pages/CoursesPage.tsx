@@ -61,14 +61,10 @@ const CoursesPage = () => {
                     <CardDescription className="line-clamp-2">{course.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <div className="space-y-3">
+                    <div className="space-y-2">
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Clock className="w-4 h-4 mr-2" />
                         <span>{course.duration}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <TrendingUp className="w-4 h-4 mr-2" />
-                        <span>{course.level}</span>
                       </div>
                       {/* <div className="pt-2">
                         <Badge variant="secondary" className="text-lg font-semibold">

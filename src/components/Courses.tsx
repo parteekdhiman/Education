@@ -57,12 +57,9 @@ const Courses = () => {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {course.description}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                     <span className="bg-secondary px-3 py-1 rounded-full">
                       {course.duration}
-                    </span>
-                    <span className="bg-secondary px-3 py-1 rounded-full">
-                      {course.level}
                     </span>
                     <span className="bg-secondary px-3 py-1 rounded-full font-semibold">
                       {course.price}

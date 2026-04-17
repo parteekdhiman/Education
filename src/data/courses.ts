@@ -3,7 +3,6 @@ export interface Course {
   title: string;
   description: string;
   duration: string;
-  level: string;
   icon: string;
   image: string;
   price: string;
@@ -30,7 +29,6 @@ export const courses: Course[] = [
     title: "Full Stack Web Development",
     description: "Build complete websites and web applications from frontend design to backend logic and databases.",
     duration: "6 months",
-    level: "Beginner to Advanced",
     icon: "Code2",
     image: "/images/fullstack-development.png",
     price: "₹3,999/month",
@@ -109,7 +107,6 @@ export const courses: Course[] = [
     title: "Data Science",
     description: "Extract insights from data and make data-driven decisions using statistics, programming, and real-world analysis.",
     duration: "6 months",
-    level: "Beginner to Intermediate",
     icon: "BarChart3",
     image: "/images/Data-science.png",
     price: "₹3,999/month",
@@ -182,7 +179,6 @@ export const courses: Course[] = [
     title: "Machine Learning",
     description: "Teach systems to learn from data and make predictions automatically using advanced algorithms.",
     duration: "6 months",
-    level: "Intermediate to Advanced",
     icon: "Brain",
     image: "/images/machine_learning.jpeg",
     price: "₹3,999/month",
@@ -255,7 +251,6 @@ export const courses: Course[] = [
     title: "Data Analytics",
     description: "Analyze existing data to answer business questions and improve performance using visualization and reporting.",
     duration: "6 months",
-    level: "Beginner to Intermediate",
     icon: "TrendingUp",
     image: "/images/data-analytics.jpg",
     price: "₹3,999/month",
@@ -328,7 +323,6 @@ export const courses: Course[] = [
     title: "Artificial Intelligence (AI)",
     description: "Create intelligent systems that can think, learn, and assist humans using cutting-edge AI technologies.",
     duration: "6 months",
-    level: "Intermediate to Advanced",
     icon: "Sparkles",
     image: "/images/AI.jpg",
     price: "₹3,999/month",
@@ -401,7 +395,6 @@ export const courses: Course[] = [
     title: "Digital Marketing (2026–2030 Ready)",
     description: "Master future-ready digital marketing including SEO, SEM, social media, and AI-powered marketing strategies.",
     duration: "4 months",
-    level: "Beginner to Intermediate",
     icon: "Megaphone",
     image: "/images/AI-in-digital-marketing-2025.png",
     price: "₹3,999/month",
@@ -467,6 +460,339 @@ export const courses: Course[] = [
     instructor: {
       name: "Expert Instructors",
       bio: "Digital marketing experts specializing in future-ready strategies and AI integration."
+    }
+  },
+  {
+    id: "cloud-computing",
+    title: "Cloud Computing",
+    description: "Deploy, manage, and scale applications on cloud platforms like AWS, Azure, and Google Cloud.",
+    duration: "5 months",
+    icon: "Cloud",
+    image: "/images/cloud-computing.png",
+    price: "₹4,499/month",
+    fullDescription: "Cloud Computing teaches students to deploy, manage, and scale applications on industry-leading platforms. Master containerization, DevOps, and serverless architecture.",
+    prerequisites: ["Basic programming knowledge", "Linux fundamentals"],
+    learningOutcomes: [
+      "Understand cloud architecture and models",
+      "Deploy applications on AWS/Azure/GCP",
+      "Manage cloud databases and storage",
+      "Implement cloud security best practices",
+      "Master CI/CD and DevOps pipelines"
+    ],
+    curriculum: [
+      {
+        module: "Cloud Fundamentals",
+        topics: [
+          "Cloud service models (IaaS, PaaS, SaaS)",
+          "Cloud deployment models",
+          "AWS, Azure, GCP overview"
+        ]
+      },
+      {
+        module: "Core Cloud Services",
+        topics: [
+          "Compute services (EC2, VMs)",
+          "Storage solutions",
+          "Database management",
+          "Networking & security"
+        ]
+      },
+      {
+        module: "DevOps & Containerization",
+        topics: [
+          "Docker fundamentals",
+          "Kubernetes orchestration",
+          "CI/CD pipelines",
+          "Infrastructure as Code"
+        ]
+      },
+      {
+        module: "Cloud Architecture & Best Practices",
+        topics: [
+          "Scalable architecture design",
+          "Cost optimization",
+          "Disaster recovery",
+          "Security compliance"
+        ]
+      }
+    ],
+    jobOpportunities: [
+      "Cloud Engineer",
+      "DevOps Engineer",
+      "Cloud Architect",
+      "Solutions Architect"
+    ],
+    realLifeSkills: [
+      "Infrastructure management",
+      "Cost optimization",
+      "System reliability",
+      "Scalability design"
+    ],
+    entrepreneurialBenefits: [
+      "Build scalable startups",
+      "Reduce infrastructure costs",
+      "Enable global application deployment"
+    ],
+    futureScope: "Cloud computing is the backbone of modern tech. Every company is migrating to cloud. Cloud expertise will be highly demanded through 2030 and beyond.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "Cloud experts with hands-on experience in AWS, Azure, and Google Cloud Platform."
+    }
+  },
+  {
+    id: "graphics-designing",
+    title: "Graphics Designing",
+    description: "Create stunning visuals using industry-standard tools like Photoshop, Figma, and Adobe Creative Suite.",
+    duration: "4 months",
+    icon: "Palette",
+    image: "/images/Graphic-Design.webp",
+    price: "₹2,999/month",
+    fullDescription: "Graphics Designing teaches students to create professional visual content using modern design tools and principles.",
+    prerequisites: ["Basic computer skills", "Creative mindset"],
+    learningOutcomes: [
+      "Master Adobe Creative Suite (Photoshop, Illustrator)",
+      "Design for web and print",
+      "Understand UI/UX design principles",
+      "Create compelling marketing visuals",
+      "Develop professional design portfolios"
+    ],
+    curriculum: [
+      {
+        module: "Design Fundamentals",
+        topics: [
+          "Design principles & theory",
+          "Color theory",
+          "Typography",
+          "Composition"
+        ]
+      },
+      {
+        module: "Adobe Creative Suite",
+        topics: [
+          "Photoshop mastery",
+          "Illustrator & vector design",
+          "InDesign for layouts",
+          "Premiere Pro basics"
+        ]
+      },
+      {
+        module: "Digital Design Tools",
+        topics: [
+          "Figma for UI/UX",
+          "Web design principles",
+          "Responsive design",
+          "Design systems"
+        ]
+      },
+      {
+        module: "Professional Portfolio Development",
+        topics: [
+          "Branding & identity",
+          "Marketing collateral",
+          "Portfolio creation",
+          "Client presentation"
+        ]
+      }
+    ],
+    jobOpportunities: [
+      "Graphic Designer",
+      "UI/UX Designer",
+      "Web Designer",
+      "Brand Designer",
+      "Marketing Designer"
+    ],
+    realLifeSkills: [
+      "Visual communication",
+      "Creative problem-solving",
+      "Professional presentation",
+      "Brand building"
+    ],
+    entrepreneurialBenefits: [
+      "Freelance design work",
+      "Design agency creation",
+      "Brand consulting",
+      "Product design business"
+    ],
+    futureScope: "Visual content dominates digital marketing. Skilled designers are in constant demand across tech, marketing, entertainment, and e-commerce industries.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "Professional designers with portfolio experience in branding, UI/UX, and digital media."
+    }
+  },
+  {
+    id: "python-short-term",
+    title: "Python Basics (Short Term)",
+    description: "Get started with Python programming in 6 weeks. Perfect for beginners.",
+    duration: "6 weeks",
+    icon: "Code2",
+    image: "/images/python-code.jpg",
+    price: "₹1,499",
+    fullDescription: "An intensive 6-week Python program designed for absolute beginners. Learn the fundamentals and start coding within days.",
+    prerequisites: ["Basic computer knowledge"],
+    learningOutcomes: [
+      "Write Python programs from scratch",
+      "Understand variables, loops, and functions",
+      "Work with files and data",
+      "Solve real-world problems with Python",
+      "Build simple automation scripts"
+    ],
+    curriculum: [
+      {
+        module: "Python Basics",
+        topics: ["Variables & data types", "Operators", "Input/Output"]
+      },
+      {
+        module: "Control Flow",
+        topics: ["If-else statements", "Loops", "Break & continue"]
+      },
+      {
+        module: "Functions & Modules",
+        topics: ["Function definition", "Parameters & return", "Using libraries"]
+      },
+      {
+        module: "Practical Applications",
+        topics: ["File operations", "String manipulation", "Simple projects"]
+      }
+    ],
+    jobOpportunities: ["Python Developer", "Backend Developer", "Automation Specialist"],
+    realLifeSkills: ["Problem-solving", "Logical thinking", "Coding confidence"],
+    entrepreneurialBenefits: ["Build automation tools", "Create scripts for business", "Learn programming foundation"],
+    futureScope: "Python is the most popular language. Strong foundation opens doors to data science, AI, web development, and automation.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "Experienced Python trainers specializing in beginner education and practical coding skills."
+    }
+  },
+  {
+    id: "java-short-term",
+    title: "Java Basics (Short Term)",
+    description: "Master Java programming fundamentals in 6 weeks. Build enterprise-ready foundation.",
+    duration: "6 weeks",
+    icon: "Code2",
+    image: "/images/Java.png",
+    price: "₹1,499",
+    fullDescription: "An intensive 6-week Java program covering core concepts, OOP principles, and practical application development.",
+    prerequisites: ["Basic programming knowledge or Python basics"],
+    learningOutcomes: [
+      "Write Java programs with proper syntax",
+      "Understand Object-Oriented Programming",
+      "Work with classes and inheritance",
+      "Handle exceptions and errors",
+      "Build console and simple GUI applications"
+    ],
+    curriculum: [
+      {
+        module: "Java Fundamentals",
+        topics: ["Variables & data types", "Operators", "Control structures"]
+      },
+      {
+        module: "Object-Oriented Programming",
+        topics: ["Classes & objects", "Inheritance", "Polymorphism", "Encapsulation"]
+      },
+      {
+        module: "Advanced Concepts",
+        topics: ["Exception handling", "Collections", "File I/O"]
+      },
+      {
+        module: "Practical Projects",
+        topics: ["Console applications", "Simple games", "Data management programs"]
+      }
+    ],
+    jobOpportunities: ["Java Developer", "Backend Engineer", "Enterprise Developer"],
+    realLifeSkills: ["OOP mindset", "Enterprise coding", "Problem decomposition"],
+    entrepreneurialBenefits: ["Build business applications", "Create scalable systems", "Enterprise startup foundation"],
+    futureScope: "Java powers millions of enterprise systems. Strong Java skills ensure stable, well-paying careers in large organizations.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "Java specialists with enterprise development experience and strong teaching methodologies."
+    }
+  },
+  {
+    id: "cpp-short-term",
+    title: "C++ Basics (Short Term)",
+    description: "Learn C++ fundamentals in 6 weeks. Build performance-critical applications.",
+    duration: "6 weeks",
+    icon: "Code2",
+    image: "/images/C++.png",
+    price: "₹1,499",
+    fullDescription: "An intensive 6-week C++ program covering syntax, memory management, and system-level programming.",
+    prerequisites: ["Basic programming knowledge or Python basics"],
+    learningOutcomes: [
+      "Master C++ syntax and data structures",
+      "Understand memory management and pointers",
+      "Work with functions and libraries",
+      "Apply object-oriented principles",
+      "Build efficient, fast applications"
+    ],
+    curriculum: [
+      {
+        module: "C++ Fundamentals",
+        topics: ["Syntax & data types", "Variables & operators", "Input/Output"]
+      },
+      {
+        module: "Advanced Features",
+        topics: ["Pointers & references", "Arrays & strings", "Functions"]
+      },
+      {
+        module: "OOP in C++",
+        topics: ["Classes & objects", "Inheritance", "Polymorphism"]
+      },
+      {
+        module: "Practical Applications",
+        topics: ["Game development basics", "System programs", "Performance optimization"]
+      }
+    ],
+    jobOpportunities: ["C++ Developer", "Systems Programmer", "Game Developer", "Embedded Systems Engineer"],
+    realLifeSkills: ["Low-level thinking", "Performance optimization", "Memory management"],
+    entrepreneurialBenefits: ["Build high-performance tools", "Create game engines", "System software development"],
+    futureScope: "C++ is essential for game development, operating systems, and performance-critical applications. Remains highly relevant through 2030+.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "C++ experts with experience in systems programming, game development, and performance optimization."
+    }
+  },
+  {
+    id: "sql-short-term",
+    title: "SQL Basics (Short Term)",
+    description: "Master SQL database queries in 4 weeks. Essential for data professionals.",
+    duration: "4 weeks",
+    icon: "Database",
+    image: "/images/sql.jpeg",
+    price: "₹999",
+    fullDescription: "A fast-paced 4-week SQL program teaching database design, query writing, and data manipulation.",
+    prerequisites: ["Basic computer literacy"],
+    learningOutcomes: [
+      "Write SELECT, INSERT, UPDATE, DELETE queries",
+      "Design database schemas",
+      "Join and aggregate data",
+      "Optimize query performance",
+      "Work with real-world databases"
+    ],
+    curriculum: [
+      {
+        module: "SQL Fundamentals",
+        topics: ["Database basics", "Tables & relationships", "Data types"]
+      },
+      {
+        module: "Query Writing",
+        topics: ["SELECT statements", "WHERE clauses", "ORDER BY & LIMIT"]
+      },
+      {
+        module: "Advanced Querying",
+        topics: ["JOINs", "Aggregations", "GROUP BY & HAVING"]
+      },
+      {
+        module: "Database Management",
+        topics: ["CREATE & ALTER", "INSERT & UPDATE", "Transactions & constraints"]
+      }
+    ],
+    jobOpportunities: ["Database Administrator", "Data Analyst", "Backend Developer", "Business Analyst"],
+    realLifeSkills: ["Data retrieval efficiency", "Logical thinking", "Database reasoning"],
+    entrepreneurialBenefits: ["Manage business databases", "Extract business insights", "Data-driven decision making"],
+    futureScope: "SQL is timeless. Every company needs database professionals. SQL skills ensure long-term career stability.",
+    instructor: {
+      name: "Expert Instructors",
+      bio: "Database experts with hands-on experience in enterprise SQL systems and data management."
     }
   }
 ];
