@@ -13,7 +13,7 @@ export interface Course {
     module: string;
     topics: string[];
   }[];
-  jobOpportunities: string[];
+  jobOpportunities?: string[];
   realLifeSkills: string[];
   entrepreneurialBenefits: string[];
   futureScope: string;
@@ -178,7 +178,7 @@ export const courses: Course[] = [
     id: "machine-learning",
     title: "Machine Learning",
     description: "Teach systems to learn from data and make predictions automatically using advanced algorithms.",
-    duration: "6 months",
+    duration: "4 months",
     icon: "Brain",
     image: "/images/machine_learning.jpeg",
     price: "₹3,999/month",
@@ -542,11 +542,11 @@ export const courses: Course[] = [
   {
     id: "graphics-designing",
     title: "Graphics Designing",
-    description: "Create stunning visuals using industry-standard tools like Photoshop, Figma, and Adobe Creative Suite.",
-    duration: "4 months",
+    description: "Create stunning visuals using industry-standard tools like Corel Draw, Figma, and Adobe Creative Suite.",
+    duration: "6 months",
     icon: "Palette",
     image: "/images/Graphic-Design.webp",
-    price: "₹2,999/month",
+    price: "₹3,000/month",
     fullDescription: "Graphics Designing teaches students to create professional visual content using modern design tools and principles.",
     prerequisites: ["Basic computer skills", "Creative mindset"],
     learningOutcomes: [
@@ -567,11 +567,11 @@ export const courses: Course[] = [
         ]
       },
       {
-        module: "Adobe Creative Suite",
+        module: "Design Tools",
         topics: [
-          "Photoshop mastery",
-          "Illustrator & vector design",
-          "InDesign for layouts",
+          "Corel Draw mastery",
+          "Figma for UI/UX",
+          "Vector design techniques",
           "Premiere Pro basics"
         ]
       },
@@ -620,14 +620,14 @@ export const courses: Course[] = [
     }
   },
   {
-    id: "python-short-term",
-    title: "Python Basics (Short Term)",
-    description: "Get started with Python programming in 6 weeks. Perfect for beginners.",
-    duration: "6 weeks",
+    id: "core-python",
+    title: "Core Python",
+    description: "Master Python programming fundamentals in 2 months. Learn the essentials and build real projects.",
+    duration: "2 months",
     icon: "Code2",
     image: "/images/python-code.jpg",
-    price: "₹1,499",
-    fullDescription: "An intensive 6-week Python program designed for absolute beginners. Learn the fundamentals and start coding within days.",
+    price: "₹3,000/month",
+    fullDescription: "A comprehensive 2-month Python program covering core concepts, data structures, and practical application development.",
     prerequisites: ["Basic computer knowledge"],
     learningOutcomes: [
       "Write Python programs from scratch",
@@ -654,7 +654,6 @@ export const courses: Course[] = [
         topics: ["File operations", "String manipulation", "Simple projects"]
       }
     ],
-    jobOpportunities: ["Python Developer", "Backend Developer", "Automation Specialist"],
     realLifeSkills: ["Problem-solving", "Logical thinking", "Coding confidence"],
     entrepreneurialBenefits: ["Build automation tools", "Create scripts for business", "Learn programming foundation"],
     futureScope: "Python is the most popular language. Strong foundation opens doors to data science, AI, web development, and automation.",
@@ -664,14 +663,14 @@ export const courses: Course[] = [
     }
   },
   {
-    id: "java-short-term",
-    title: "Java Basics (Short Term)",
-    description: "Master Java programming fundamentals in 6 weeks. Build enterprise-ready foundation.",
-    duration: "6 weeks",
+    id: "core-java",
+    title: "Core Java",
+    description: "Master Java programming fundamentals in 2 months. Build enterprise-ready foundation.",
+    duration: "2 months",
     icon: "Code2",
     image: "/images/Java.png",
-    price: "₹1,499",
-    fullDescription: "An intensive 6-week Java program covering core concepts, OOP principles, and practical application development.",
+    price: "₹3,000/month",
+    fullDescription: "A comprehensive 2-month Java program covering core concepts, OOP principles, and practical application development.",
     prerequisites: ["Basic programming knowledge or Python basics"],
     learningOutcomes: [
       "Write Java programs with proper syntax",
@@ -698,7 +697,6 @@ export const courses: Course[] = [
         topics: ["Console applications", "Simple games", "Data management programs"]
       }
     ],
-    jobOpportunities: ["Java Developer", "Backend Engineer", "Enterprise Developer"],
     realLifeSkills: ["OOP mindset", "Enterprise coding", "Problem decomposition"],
     entrepreneurialBenefits: ["Build business applications", "Create scalable systems", "Enterprise startup foundation"],
     futureScope: "Java powers millions of enterprise systems. Strong Java skills ensure stable, well-paying careers in large organizations.",
@@ -708,14 +706,14 @@ export const courses: Course[] = [
     }
   },
   {
-    id: "cpp-short-term",
-    title: "C++ Basics (Short Term)",
-    description: "Learn C++ fundamentals in 6 weeks. Build performance-critical applications.",
-    duration: "6 weeks",
+    id: "cpp",
+    title: "C++ Basics",
+    description: "Learn C++ fundamentals in 45 days. Build performance-critical applications.",
+    duration: "45 days",
     icon: "Code2",
     image: "/images/C++.png",
-    price: "₹1,499",
-    fullDescription: "An intensive 6-week C++ program covering syntax, memory management, and system-level programming.",
+    price: "₹3,500",
+    fullDescription: "An intensive 45-day C++ program covering syntax, memory management, and system-level programming.",
     prerequisites: ["Basic programming knowledge or Python basics"],
     learningOutcomes: [
       "Master C++ syntax and data structures",
@@ -742,7 +740,6 @@ export const courses: Course[] = [
         topics: ["Game development basics", "System programs", "Performance optimization"]
       }
     ],
-    jobOpportunities: ["C++ Developer", "Systems Programmer", "Game Developer", "Embedded Systems Engineer"],
     realLifeSkills: ["Low-level thinking", "Performance optimization", "Memory management"],
     entrepreneurialBenefits: ["Build high-performance tools", "Create game engines", "System software development"],
     futureScope: "C++ is essential for game development, operating systems, and performance-critical applications. Remains highly relevant through 2030+.",
@@ -752,14 +749,14 @@ export const courses: Course[] = [
     }
   },
   {
-    id: "sql-short-term",
-    title: "SQL Basics (Short Term)",
-    description: "Master SQL database queries in 4 weeks. Essential for data professionals.",
-    duration: "4 weeks",
+    id: "sql",
+    title: "SQL Basics",
+    description: "Master SQL database queries in 1 month. Essential for data professionals.",
+    duration: "1 month",
     icon: "Database",
     image: "/images/sql.jpeg",
-    price: "₹999",
-    fullDescription: "A fast-paced 4-week SQL program teaching database design, query writing, and data manipulation.",
+    price: "₹3,500",
+    fullDescription: "A comprehensive 1-month SQL program teaching database design, query writing, and data manipulation.",
     prerequisites: ["Basic computer literacy"],
     learningOutcomes: [
       "Write SELECT, INSERT, UPDATE, DELETE queries",
@@ -786,7 +783,6 @@ export const courses: Course[] = [
         topics: ["CREATE & ALTER", "INSERT & UPDATE", "Transactions & constraints"]
       }
     ],
-    jobOpportunities: ["Database Administrator", "Data Analyst", "Backend Developer", "Business Analyst"],
     realLifeSkills: ["Data retrieval efficiency", "Logical thinking", "Database reasoning"],
     entrepreneurialBenefits: ["Manage business databases", "Extract business insights", "Data-driven decision making"],
     futureScope: "SQL is timeless. Every company needs database professionals. SQL skills ensure long-term career stability.",
